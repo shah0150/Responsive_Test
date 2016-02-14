@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Responsive Website Tool</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <nav>
+         <span id=output onclick="updateOutput()"></span>
+         <input id=urlInput type=url autocapitalize=off placeholder="http://" tabindex=1>
+         <input type=submit value=Go onclick="loadURL()">
+         <input type=button value=1 onclick="resizeIframe('100px')">
+         <input type=button value=2 onclick="resizeIframe('200px')">
+         <input type=button value=3 onclick="resizeIframe('300px')">
+         <input type=button value=4 onclick="resizeIframe('400px')">
+         <input type=button value=5 onclick="resizeIframe('500px')">
+         <input type=button value=6 onclick="resizeIframe('600px')">
+         <input type=button value=7 onclick="resizeIframe('700px')">
+         <input type=button value=8 onclick="resizeIframe('800px')">
+         <input type=button value=9 onclick="resizeIframe('900px')">
+         <input type=button value=∞ onclick="resizeIframe('100%')">
+      </nav>
+      <iframe id=site></iframe>
+   </body>
+   <script type="text/javascript" src="main.js"></script>
+</html>
